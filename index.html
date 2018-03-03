@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>晚来的告白</title>
+<meta name="description" content="鼓起勇气向你告白">
+	<link rel="Shortcut Icon" href="./favicon.ico">
+	<link href="./default.css" tppabs="default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="./jquery.min.js"></script>
+	<script type="text/javascript" src="./garden.js" ></script>
+    <script type="text/javascript" src="./functions.js"></script>
+	<script type="text/javascript" src="./MouseClick.js"></script>
+    <script type="text/javascript" src="./HuaMazz.js" tppabs="/js/functions.js"></script>
+	<style>
+	.divcss5{width:0px;height:0px;line-height:0px; overflow:hidden;}
+	@font-face{font-family:'RuiHeiXiTi';src:url('./RuiHeiXiTi.otf') format('truetype');font-weight:bold;font-style:normal}
+	</style>
+</head>
+<body>
+	<br/>
+    &nbsp;&nbsp;<span style="font-size:16px;color:#666;cursor: pointer;" title="Hello ！" onclick="location.href='https://github.com/veasion'" ontouchend="this.onclick();">Veasion</span>
+	
+	<div class="snow-container" id="huaMazz" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100;"></div>
+	<audio id="bgmMusic" src="./xinganbaobei.mp3" preload="auto" type="audio/mp3" autoplay="" loop=""></audio>
+	<div id="mainDiv">
+		<div id="content" style="/*width: 1110px; height: 625px; margin-top: 138px; margin-left: 405px;*/" >
+			<div id="code" style="margin-top: 52.0px;">
+				<span class="comments">
+					<p>  &nbsp;<br> </p>
+					<p>  <br> </p>
+					<p>  阿昕，我爱你！ </p>
+					<!--
+					<p>  阿昕，我们认识有七八年了 </p>
+					<p>  有件事初中就想跟你说了 </p>
+					<p>  毕业那会鼓足了勇气最后还是没能开口 </p>
+					<p>  时间一晃而过，转移我们都毕业了 </p>
+					<p>  如果我在不说就晚了 </p>
+					<p>  我爱你 </p>
+					<p>  以前没有勇气参与你的生活 </p>
+					<p>  现在我鼓起勇气向你表白 </p>
+					<p>  给我个照顾你一辈子的机会好不好？ </p>
+					-->
+				</span>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden" wi-dth="670" he-ight="625"></canvas>
+				<div id="words" style="position: absolute; top: 333px; left: 915px;display:none;">
+					<div id="messages" style="display: block;">
+						我们认识...
+						<div id="elapseClock"><span class="digit">233</span> days <span class="digit">11</span> hours <span class="digit">21</span> minutes <span class="digit">27</span> seconds</div>
+					</div>
+					<div id="loveu" style="display: block;">
+						最爱你的<br>
+						<div class="signature">Veasion</div>
+				</div>
+			</div>
+</div>
+
+	<div class="bg1">	
+		<div class="main">
+	     <div>
+
+		 <div style="text-align:center">
+		 <div style="width:298;height:52;"></div>
+		 </div>
+			   <div class="divcss5">
+			   Copyright ? 2017 <a href="http://www.luozhuowei.cn/" target="_blank">Veasion</a><br>
+
+			   </div>
+                </div>
+
+			<div>
+
+
+		</div>
+                </div>
+		</div>
+
+	</div>
+
+	</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		var strs = "2011-06-06 00:00:00";
+        var nowTime = new Date();
+        var together = new Date(strs.replace(/-/g,"/"));	
+		/*
+		setTimeout(function () {
+		    $("#words").show();
+			adjustWordsPosition();
+			startHeartAnimation();
+		}, 5000);
+		*/
+
+		timeElapse(together);
+		setInterval(function () {
+			timeElapse(together);
+		}, 900);
+		// adjustCodePosition();
+		$("#code").typewriter();
+	</script>
+
+
+<div>
+</div>
+
+</body></html>
