@@ -777,22 +777,12 @@ body,button {
 }
 
 .page-7 {
-	background-color: #e6fbec
-}
-
-.page-7 img {
-	max-height: 100%;
-	margin: 0 auto
+	background-color: #63BDEF
 }
 
 .page-7 h3 {
-	position: absolute;
-	top: 1em;
-	left: 50%;
-	padding: 0;
-	margin-top: 0;
-	margin-left: -150px;
-	z-index: 1
+	font-size: 1.45rem;
+	margin-top: 10px;
 }
 
 .page-8 {
@@ -836,15 +826,16 @@ body,button {
 
 .page-12 img {
 	position: absolute;
-	bottom: 1em;
-	left: 1em;
+	bottom: 2em;
+	left: 0;
 	z-index: 2;
-	height: 40%
+	height: 42%
 }
 
 .page-12 h3 {
 	margin-left: 1em;
-	margin-right: 1em
+	margin-right: 1em;
+	font-size: 1.6rem;
 }
 
 .page-13 {
@@ -858,6 +849,10 @@ body,button {
 
 .page-13 he {
 	height: 20%
+}
+
+.page-13 h3{
+	font-size: 1.6rem;
 }
 
 .page-14 {
