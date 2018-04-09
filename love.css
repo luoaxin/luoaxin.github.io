@@ -1096,49 +1096,23 @@ body,button {
 }
 
 .page-50 {
-	background-color: #aae1f6;
-	padding: 0
+	background-color: white;
 }
 
-.page-50 .img1 {
+.page-51{
+	background-color: white;
+}
+
+.page-51 img{
 	position: absolute;
-	right: 0;
-	top: 0
+	max-height: 90%;
+	bottom: 0;
 }
 
-.page-50 .img2 {
-	position: absolute;
-	left: 1em;
-	bottom: 1em
-}
-
-.page-50 p {
-	position: absolute;
-	top: 1em;
-	left: 1em;
-	width: 50%;
-	margin: 0;
-	z-index: 3;
-	font-size: 1.5em
-}
-
-.page-51 {
-	background-image: url(./img/iali52.jpg);
-	background-size: cover;
-	background-color: #fff;
-	text-align: left
-}
-
-.page-52 {
-	background-color: #fff2fb;
-	padding: 0
-}
-
-.page-52 h3 {
-	margin: 0;
-	padding-top: .8em;
-	font-size: 1.6em;
-	color: #4e0f3d
+.page-52 h3{
+	font-size: 1.6rem;
+	line-height: 6rem;
+	color: black;
 }
 
 .page-53 {
@@ -1160,7 +1134,15 @@ body,button {
 }
 
 .page-55 {
-	background-color: #fff
+	background-color: pink
+}
+
+.page-55 p{
+	line-height: 2.5rem;
+}
+
+.page-55 span{
+	font-size: 1.2rem;
 }
 
 .write-tip {
