@@ -276,6 +276,7 @@
   <script src="./all.min.js"></script>
   <script src="./love.min.js"></script>
   <script>
+      var pageCount = 0, intTime;
       Flowtime.toggleOverview(true);
       setTimeout(function(){
         Flowtime.toggleOverview(true);
@@ -283,8 +284,11 @@
           $("div[class='thumb-page-0'][data-section='__0'][data-page='__0']").trigger("click");
           setTimeout(function(){
             $("div[class='thumb-page-0'][data-section='__0'][data-page='__0']").trigger("click");
-            setInterval(function(){
+            intTime = setInterval(function(){
               Flowtime.next();
+              if(location.href.indexOf("/section-9/page-4") != -1){
+                clearInterval(intTime);
+              }
             }, 2200);
           }, 2500);
         }, 100);
