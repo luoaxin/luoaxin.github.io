@@ -279,11 +279,16 @@
       Flowtime.toggleOverview(true);
       setTimeout(function(){
         Flowtime.toggleOverview(true);
-        $("div[class='thumb-page-0'][data-section='__0'][data-page='__0']").trigger("click");
-        setInterval(function(){
-          Flowtime.next();
-        }, 2100);
-      }, 6000);
+        setTimeout(function(){
+          $("div[class='thumb-page-0'][data-section='__0'][data-page='__0']").trigger("click");
+          setTimeout(function(){
+            $("div[class='thumb-page-0'][data-section='__0'][data-page='__0']").trigger("click");
+            setInterval(function(){
+              Flowtime.next();
+            }, 2200);
+          }, 2500);
+        }, 100);
+      }, 5000);
   </script>
   <div class="ft-default-progress">
     <div data-section="__0" class="ft-section-thumb thumb-section-0">
