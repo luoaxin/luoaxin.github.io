@@ -308,7 +308,7 @@ body,button {
 }
 
 .flowtime h3 {
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	line-height: 3rem
 }
 
@@ -859,8 +859,16 @@ body,button {
 	background-color: #fbf7d1
 }
 
+.page-14 h3{
+	color: ivory;
+}
+
 .page-15 {
 	background: #dcf2fa url(./img/iali45_bg.jpg)
+}
+
+.page-15 h3{
+	font-size: 1.4rem;
 }
 
 .page-16 {
@@ -877,11 +885,6 @@ body,button {
 
 .page-19 h3 {
 	margin-bottom: 2em
-}
-
-.page-18 .text {
-	margin-left: 1em;
-	margin-right: 1em
 }
 
 .page-20 {
@@ -905,6 +908,10 @@ body,button {
 
 .page-23 {
 	background-color: #fff
+}
+
+.page-24 h3{
+	line-height: 2.2rem;
 }
 
 .page-25 {
