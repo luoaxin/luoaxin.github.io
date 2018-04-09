@@ -279,6 +279,11 @@
       // Flowtime.toggleOverview(true);
       // Flowtime.toggleOverview(false);
       // Flowtime.next();
+      $(function(){
+        $("body").dblclick(function(){
+          Flowtime.toggleOverview(true);
+        });
+      });
   </script>
   <div class="ft-default-progress">
     <div data-section="__0" class="ft-section-thumb thumb-section-0">
