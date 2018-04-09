@@ -14,7 +14,7 @@
     <div class="ft-section section-1" data-id="__section-1" data-prog="__1" id="">
       <div id="" class="ft-page page-1 hilite actual" data-id="__page-1" data-prog="__1">
         <p class="text1">LZW ❤ LAX，我想陪你一起度过余生</p>
-        <p class="text2">“向下滑”倾听我鼓起勇气的表白...</p>
+        <p class="text2">“下滑” 倾听我鼓起勇气的表白...</p>
       </div>
       <div id="" class="ft-page page-2 future-page" data-id="__page-2" data-prog="__2">
         <p class="top-text">过去的小V一直是一个人生活，享受着孤独，也憧憬着爱情。</p>
@@ -266,7 +266,7 @@
           无论精彩、平淡都会是他们喜欢的。<br>
           <br>
           <br>
-          <span> -- 按“Esc"键有惊喜</span>
+          <span> -- “双击” 有惊喜</span>
         </p>
       </div>
     </div>
@@ -288,11 +288,29 @@
               Flowtime.next();
               if(location.href.indexOf("/section-9/page-4") != -1){
                 clearInterval(intTime);
+                pageCount = 0;
+              }else{
+                pageCount++;
               }
             }, 2200);
           }, 2500);
         }, 100);
       }, 5000);
+      var clickCount = 0;
+      $("body").click(function(){
+        if(pageCount == 0){
+          clickCount++;
+        }
+        setTimeout(function () {
+            clickCount = 0;
+        }, 500);
+        if(clickCount > 1){
+          setTimeout(function(){
+            Flowtime.toggleOverview(true);
+            clickCount = 0;
+          }, 100);
+        }
+      });
   </script>
   <div class="ft-default-progress">
     <div data-section="__0" class="ft-section-thumb thumb-section-0">
