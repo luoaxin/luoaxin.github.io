@@ -959,7 +959,7 @@ body,button {
 }
 
 .page-33 {
-	background-color: #fef0d5;
+	background-color: white;
 	padding: 0
 }
 
@@ -968,39 +968,13 @@ body,button {
 	color: #a58545
 }
 
-.page-34 {
-	background: #94c2e3 url(./img/iali57.jpg) left bottom no-repeat
-}
-
-.page-34 h3 {
-	color: #fff
-}
-
-.page-35 {
-	background: #fff url(./img/iali8_bg.png) left bottom repeat-x;
-	padding: 0
-}
-
-.page-35 img {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 1
-}
-
-.page-35 h3 {
-	position: absolute;
-	right: 10%;
-	top: 5%;
-	color: green;
-	z-index: 2;
-	font-size: 2em
+.page-35 h3{
+	color: white;
 }
 
 .page-36 h3 {
 	text-align: right;
 	right: 1.5em;
-	color: #eee
 }
 
 .page-37 {
@@ -1071,7 +1045,7 @@ body,button {
 }
 
 .page-42 h3 {
-	font-size: 2em
+	font-size: 1.5em
 }
 
 .page-43 {
@@ -1087,32 +1061,13 @@ body,button {
 }
 
 .page-44 {
-	background-color: #f3e7ab
+	background-color: white
 }
 
-.page-45 {
-	background-color: #b1dceb
-}
-
-.page-46 {
-	background: #66cbff
-}
-
-.page-46 h3 {
+.page-44 img{
+	max-height: 60%;
 	position: absolute;
-	top: 1em;
-	left: 50%;
-	margin-left: -40%;
-	padding: 0;
-	margin-top: 0;
-	width: 10em;
-	text-align: left
-}
-
-.page-46 h3 span {
-	display: inline-block;
-	width: 1em;
-	vertical-align: top
+	bottom: 130px;
 }
 
 .page-47 {
@@ -1136,17 +1091,8 @@ body,button {
 	vertical-align: top
 }
 
-.page-48 {
-	background-color: #e3e2e7
-}
-
 .page-49 {
-	background-color: #fce6b6;
-	text-align: left
-}
-
-.page-49 img {
-	margin: 0
+	background-color: #e3e2e7
 }
 
 .page-50 {
