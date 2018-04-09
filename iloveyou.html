@@ -256,8 +256,8 @@
         <img src="./iali68.jpg" alt="情人节快乐">
         <h3>情人节快乐</h3>
       </div>
-      <div id="" class="ft-page page-54 center-img future-section future-page" data-id="__page-3" data-prog="__3">
-        <div class="center-img">I love you</div>
+      <div id="" class="ft-page page-54 future-section future-page" data-id="__page-3" data-prog="__3">
+        <div class="">I love you</div>
       </div>
       <div id="" class="ft-page page-55 right-img future-section future-page" data-id="__page-4" data-prog="__4">
         <img src="./14915.jpg" alt="小V和小公主的故事会一直继续下去。">
@@ -276,14 +276,17 @@
   <script src="./all.min.js"></script>
   <script src="./love.min.js"></script>
   <script>
-      // Flowtime.toggleOverview(true);
-      // Flowtime.toggleOverview(false);
-      // Flowtime.next();
-      $(function(){
-        $("body").dblclick(function(){
-          Flowtime.toggleOverview(true);
-        });
-      });
+      Flowtime.toggleOverview(true);
+      setTimeout(function(){
+        Flowtime.toggleOverview(true);
+        $("div[class='thumb-page-0'][data-section='__0'][data-page='__0']").trigger("click");
+        setInterval(function(){
+          Flowtime.next();
+        }, 2000);
+      }, 2000);
+      /*$("body").dblclick(function(){
+        Flowtime.toggleOverview(true);
+      });*/
   </script>
   <div class="ft-default-progress">
     <div data-section="__0" class="ft-section-thumb thumb-section-0">
