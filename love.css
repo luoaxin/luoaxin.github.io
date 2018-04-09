@@ -303,22 +303,22 @@ body,button {
 }
 
 .flowtime h2 {
-	font-size: 3rem;
+	font-size: 2rem;
 	line-height: 3.3rem
 }
 
 .flowtime h3 {
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 	line-height: 3rem
 }
 
 .flowtime h4,.flowtime h5,.flowtime h6 {
-	font-size: 1.75rem;
+	font-size: 1.7rem;
 	line-height: 2rem
 }
 
 .flowtime p {
-	font-size: 1.75rem;
+	font-size: 1.4rem;
 	line-height: 2rem;
 	margin: 2rem 0
 }
@@ -745,11 +745,16 @@ body,button {
 }
 
 .page-2 img {
-	height: 80%
+	height: 70%;
+	margin-top: 10px;
 }
 
 .page-3 {
-	background-color: #c1b287
+	background-color: white
+}
+
+.page-4 {
+	background-color: #FBFAF5
 }
 
 .page-6 {
@@ -759,7 +764,7 @@ body,button {
 
 .page-6 img {
 	position: absolute;
-	bottom: 0;
+	bottom: 175px;
 	left: 0;
 	max-width: 70%
 }
@@ -786,7 +791,7 @@ body,button {
 	left: 50%;
 	padding: 0;
 	margin-top: 0;
-	margin-left: -240px;
+	margin-left: -150px;
 	z-index: 1
 }
 
