@@ -934,45 +934,13 @@ body,button {
 	text-align: center
 }
 
-.page-28 {
-	background: #b7e7f3 url(./img/iali40_bg.jpg) bottom repeat-x;
-	padding: 0
-}
-
-.page-28 img {
-	position: absolute;
-	bottom: 0;
-	left: 3em
-}
-
-.page-28 h3 {
-	position: absolute;
-	right: 1em;
-	bottom: 360px;
-	text-align: right;
-	color: #127184
-}
-
 .page-29 {
-	background: #0d85d1;
-	padding: 0
-}
-
-.page-29 h3 {
-	position: absolute;
-	z-index: 2;
-	width: 100%;
-	text-align: center;
-	color: #eef
-}
-
-.page-30 {
 	background: #fff url(./img/iali76_bg.png) center bottom repeat-x;
 	padding: 0;
 	padding: 0
 }
 
-.page-30 img {
+.page-29 img {
 	position: absolute;
 	bottom: 0;
 	left: 0
@@ -980,6 +948,10 @@ body,button {
 
 .page-31 {
 	background-color: #fbf5e9
+}
+
+.page-31 h3{
+	font-size: 1.2rem;
 }
 
 .page-32 {
