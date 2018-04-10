@@ -12,7 +12,7 @@
 <body class="ft-absolute-nav" onclick="doClick();" ontouchend="this.onclick();">
   <div class="flowtime" style="transform: translateX(0%) translateY(0%);">
     <div class="ft-section section-1" data-id="__section-1" data-prog="__1" id="">
-      <div id="" class="ft-page page-1 hilite actual" data-id="__page-1" data-prog="__1">
+      <div id="ft-page-1" class="ft-page page-1 hilite actual" data-id="__page-1" data-prog="__1">
         <p class="text1">LZW ❤ LAX，我想陪你一起度过余生</p>
         <p class="text2">“下滑” 倾听我鼓起勇气的表白...</p>
       </div>
@@ -250,15 +250,16 @@
       <div id="" class="ft-page page-54 full-img future-section future-page" data-id="__page-3" data-prog="__3">
         <img src="./ali/v14.jpg" alt="情人崖">
       </div>
-      <div id="" class="ft-page page-55 right-img future-section future-page" data-id="__page-4" data-prog="__4">
-        <p class="text">
+      <div id="" class="ft-page page-55 full-img future-section future-page" data-id="__page-4" data-prog="__4">
+        <h3 id="code">
           为了这一天...<br>
           我等了也准备了很久了。<br>
-          小公主，<br>
+          小公主，&nbsp;<br>
           做我女朋友好不好 ？<br>
           <br><br>
           <span> “双击” 有惊喜</span>
-        </p>
+        </h3>
+        <img src="./ali/v0.jpg" alt="我爱你">
       </div>
     </div>
   </div>
@@ -268,33 +269,36 @@
   <script src="./love.min.js"></script>
   <script src="./MouseClick.js"></script>
   <script>
-      var pageCount = 0, clickCount = 0, intTime;
+      var clickCount = 0, intTime;
+      canClick = false;
 
+      // 展示心
       Flowtime.toggleOverview(true);
 
+      // 一步步演示
       setTimeout(function(){
         Flowtime.toggleOverview(true);
+        $("#code").hide();
         setTimeout(function(){
-          $("div[class='thumb-page-0'][data-section='__0'][data-page='__0']").trigger("click");
+          $("#thumb-page-0").trigger("click");
           setTimeout(function(){
-            $("div[class='thumb-page-0'][data-section='__0'][data-page='__0']").trigger("click");
+            $("#thumb-page-0").trigger("click");
             intTime = setInterval(function(){
               Flowtime.next();
               if(location.href.indexOf("/section-9/page-4") != -1){
                 clearInterval(intTime);
-                pageCount = 0;
-              }else{
-                pageCount++;
+                canClick = true;
+                $("#code").show();
+                $("#code").typewriter();
               }
             }, 2500);
           }, 3000);
         }, 100);
       }, 6000);
 
+      // 双击展示心
       function doClick(){
-        if(pageCount == 0){
-          clickCount++;
-        }
+        if(canClick) clickCount ++;
         setTimeout(function () {
             clickCount = 0;
         }, 500);
@@ -308,7 +312,7 @@
   </script>
   <div class="ft-default-progress">
     <div data-section="__0" class="ft-section-thumb thumb-section-0">
-      <div class="ft-page-thumb thumb-page-0 actual" data-section="__0" data-page="__0"></div>
+      <div id="thumb-page-0" class="ft-page-thumb thumb-page-0 actual" data-section="__0" data-page="__0"></div>
       <div class="ft-page-thumb thumb-page-1" data-section="__0" data-page="__1"></div>
       <div class="ft-page-thumb thumb-page-2" data-section="__0" data-page="__2"></div>
       <div class="ft-page-thumb thumb-page-3" data-section="__0" data-page="__3"></div>
