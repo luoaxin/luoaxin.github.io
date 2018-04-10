@@ -68,7 +68,7 @@
         <img src="./iali64.jpg" alt="可是小V的爱情又在哪里呢？">
         <h3>可是小V的爱情又在哪里呢？</h3>
       </div>
-      <div id="" class="ft-page page-14 left-img future-section future-page" data-id="__page-4" data-prog="__4">
+      <div id="" class="ft-page page-14 full-img future-section future-page" data-id="__page-4" data-prog="__4">
         <h3>他每天静默地看着窗外</h3>
         <img src="./ali/v16.jpg" alt="他每天静默地看着窗外">
       </div>
@@ -269,7 +269,7 @@
   <script src="./love.min.js"></script>
   <script src="./MouseClick.js"></script>
   <script>
-      var clickCount = 0, intTime;
+      var clickCount = 0, cancelDemoClick = 0, intTime;
       canClick = false;
 
       // 展示心
@@ -296,17 +296,26 @@
         }, 100);
       }, 6000);
 
-      // 双击展示心
+      // 双击展示心，取消演示
       function doClick(){
         if(canClick) clickCount ++;
+        else cancelDemoClick ++;
         setTimeout(function () {
             clickCount = 0;
         }, 500);
+        setTimeout(function () {
+            cancelDemoClick = 0;
+        }, 1000);
         if(clickCount > 1){
           setTimeout(function(){
             Flowtime.toggleOverview(true);
             clickCount = 0;
           }, 100);
+        }
+        if(cancelDemoClick > 4){
+          clearInterval(intTime);
+          $("#code").show();
+          canClick = true;
         }
       }
   </script>
@@ -385,7 +394,7 @@
       <div class="ft-page-thumb thumb-page-3" data-section="__8" data-page="__3"></div>
     </div>
   </div>
-  <div class="mPower"><span id="on" title="点击暂停"></span><span id="off" title="点击播放"></span></div>
+  <div class="mPower"><span id="on" title="点击暂停" ontouchend="this.onclick();"></span><span id="off" title="点击播放" ontouchend="this.onclick();"></span></div>
   <script>
   window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"不经意相识, 或许是缘分，或许是注定；以后不管有怎么样，我都会在；就算全世界都都抛弃你，记得还有我；再累都不用害怕，因为你有我。记得在你最需要的时候想起我；我会一直陪着你。","bdMini":"2","bdMiniList":["tsina","qzone","weixin","sqq","tqq","qq","tqf","copy","bdysc","baidu","hi","share189","renren","fx","mail","mshare"],"bdPic":"//res.zhangge.net/love/img/lovers.jpg","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"1","bdPos":"right","bdTop":"200"},"image":{"viewList":["tsina","qzone","weixin","tqq"],"viewText":"唯美的爱，期待您的分享！","viewSize":"24"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","qzone","weixin","tqq"]}};
   </script>
