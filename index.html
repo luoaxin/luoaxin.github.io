@@ -54,9 +54,21 @@
 				var y = l.offset().top + 180;
 				var x = l.offset().left + (l.width() - $("#love").width()) / 2;
 				$("#love").css({left: x,top: y});
-                setTimeout(function(){
-                    location.href = 'http://luoaxin.cn/iloveyou.html';
-                }, 8500);
+        setTimeout(function(){
+          var system = {};
+          var p = navigator.platform;
+          system.win = p.indexOf("Win") == 0;
+          system.mac = p.indexOf("Mac") == 0;
+          system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+          console.log($(window).width());
+          if((system.win||system.mac||system.xll) && $(window).width() > 600){
+            // location.href = "http://luoaxin.cn/iloveyou.html";
+            // 电脑访问，改变窗体大小
+            window.open("http://luoaxin.cn/iloveyou.html", "", "width=350,height=580");
+          }else{
+            location.href = "http://luoaxin.cn/iloveyou.html";
+          }
+        }, 8500);
 			}, 1000);
 		}
 	</script>
