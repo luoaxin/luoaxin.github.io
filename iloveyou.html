@@ -260,6 +260,11 @@
           <span> “双击” 有惊喜</span>
         </h3>
         <img src="./ali/v0.jpg" alt="我爱你">
+        <div id="bubbles" style="visibility:hidden">
+          <img src="./img/1.png">
+          <img src="./img/2.png">
+          <img src="./img/1.png">
+        </div>
       </div>
     </div>
   </div>
@@ -290,6 +295,10 @@
                 canClick = true;
                 $("#code").show();
                 $("#code").typewriter();
+                nbfm = 60;runTime = 8000;
+                setTimeout(function(){
+                  runXin();
+                }, 10000);
               }
             }, 2500);
           }, 3000);
