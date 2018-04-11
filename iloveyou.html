@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="author" content="http://github.com/veasion">
   <link rel="shortcut icon" href="http://veasion.oss-cn-shanghai.aliyuncs.com/luoaxin/favicon.ico">
-  <title>小公主，我爱你</title>
+  <title>我的告白</title>
   <style type="text/css">
     @font-face {font-family:'RuiHeiXiTi';src:url('./RuiHeiXiTi.otf') format('truetype');font-weight:bold;font-style:normal}
   </style>
@@ -16,7 +16,7 @@
   <div class="flowtime" style="transform: translateX(0%) translateY(0%);">
     <div class="ft-section section-1" data-id="__section-1" data-prog="__1" id="">
       <div id="ft-page-1" class="ft-page page-1 hilite actual" data-id="__page-1" data-prog="__1">
-        <p class="text1">LZW ❤ LAX，我想陪你一起度过余生</p>
+        <p class="text1">Veasion ❤ 小公主，我想陪你一起度过余生</p>
         <p class="text2">“下滑” 倾听我鼓起勇气的表白...</p>
       </div>
       <div id="" class="ft-page page-2 future-page" data-id="__page-2" data-prog="__2">
@@ -278,6 +278,7 @@
   <script src="http://veasion.oss-cn-shanghai.aliyuncs.com/luoaxin/MouseClick.js"></script>
   <script>
       var clickCount = 0, cancelDemoClick = 0, intTime;
+      var titles = {"section-1":"告白","section-2":"一个人的生活","section-3":"与小公主相遇","section-4":"爱一个人，很简单","section-5":"美好向往","section-6":"学会努力","section-7":"想和小公主在一起","section-8":"像小公主表白","section-9":"小公主，我爱你"};
       canClick = false;
 
       // 展示心
@@ -293,20 +294,27 @@
             $("#thumb-page-0").trigger("click");
             intTime = setInterval(function(){
               Flowtime.next();
-              if(location.href.indexOf("/section-9/page-4") != -1){
+              if(location.href.indexOf("section-9/page-4") != -1){
                 clearInterval(intTime);
                 canClick = true;
-                $("#code").show();
-                $("#code").typewriter();
-                nbfm = 60;runTime = 8000;
-                setTimeout(function(){
-                  runXin();
-                }, 10000);
               }
             }, 2500);
           }, 3000);
         }, 100);
       }, 6000);
+
+      // 监听页面改变
+      changePage = function(hash){
+        if(hash.indexOf("section-9/page-4") != -1){
+          $("#code").show();
+          $("#code").typewriter();
+          nbfm = 60;runTime = 8000;
+          setTimeout(function(){
+            runXin();
+          }, 10000);
+        }
+        document.title = titles[hash.substring(0, hash.indexOf("/"))] || "告白";
+      }
 
       // 双击展示心，取消演示
       function doClick(){

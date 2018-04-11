@@ -60,13 +60,12 @@
           system.win = p.indexOf("Win") == 0;
           system.mac = p.indexOf("Mac") == 0;
           system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-          console.log($(window).width());
           if((system.win||system.mac||system.xll) && $(window).width() > 600){
             // location.href = "http://luoaxin.cn/iloveyou.html";
             // 电脑访问，改变窗体大小
-            window.open("http://luoaxin.cn/iloveyou.html", "", "width=350,height=580");
+            window.open(location.href.replace("/index.html", "") + "/iloveyou.html", "", "width=350,height=580");
           }else{
-            location.href = "http://luoaxin.cn/iloveyou.html";
+            location.href = location.href.replace("/index.html", "") + "/iloveyou.html";
           }
         }, 8500);
 			}, 1000);
